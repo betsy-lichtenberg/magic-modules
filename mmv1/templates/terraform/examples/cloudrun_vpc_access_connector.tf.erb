@@ -6,7 +6,7 @@ resource "google_project_service" "vpcaccess_api" {
 }
 # [END vpc_serverless_connector_enable_api]
 
-# [START vpc_serverless_connector]
+# [START cloudrun_vpc_serverless_connector]
 # VPC
 resource "google_compute_network" "default" {
   name                    = "<%= ctx[:vars]['cloudrun_network'] %>"
